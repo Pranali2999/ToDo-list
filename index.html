@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+  </head>
+  <body>
+    <!-- this outer container is to contain Todo list and background styling -->
+    <div class="outer-container">
+      <div class="container">
+        <h2>Todo List</h2>
+        <!-- this div is to take input from user and Add button-->
+        <div class="input-container">
+          <img src="imgs/icons8-todo-list-50.png" />
+          <input type="text" id="todo-input" placeholder="Enter a task..." />
+          <button class="add-btn" id="add-btn">Add</button>
+        </div>
+        <!-- this div and class other is for styling -->
+        <div class="other">
+          <!-- this span is to mark all task completed -->
+          <span id="Complete-all-task">Complete all task</span>
+          <!-- this div is for the popup message -->
+          <div id="popup" class="popup">
+            <span>Great job!</span>
+          </div>
+
+          <span id="Clear-Complete">Clear Complete</span>
+        </div>
+        <!-- this ul is for the list of todo items -->
+        <ul class="todo-list" id="todo-list"></ul>
+        <div class="other">
+          <!-- this span displays the task count -->
+          <span id="task-count">0 Tasks left</span>
+          <div>
+            <b><span id="All">All</span></b>
+            <!-- this span is to mark Uncomplete -->
+            <span id="Uncomplete">Uncomplete</span>
+            <!-- this span is to mark task completed -->
+            <span id="Completed">Completed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

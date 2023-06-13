@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+/*to style background of todo list*/
+.outer-container {
+  padding: 20px;
+  border: solid #ccc;
+  border-radius: 3px;
+  background-color: rgb(216, 213, 208);
+}
+/*main container to contain all elements*/
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+/*to style todo list*/
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+/*to style each items present in todo list*/
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.todo-item.checked {
+  background-color: #e1e1e1;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+/*to style delete button in todo list*/
+.todo-item .delete-btn {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/*to style user input container*/
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.input-container input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+/*to style ADD button*/
+.add-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/*to style task count button*/
+.task-count {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+}
+/*this is to display and place "Complete all task,Clear Complete,0 Tasks left,All Uncomplete Completed"*/
+.other {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+/*to style popup after completing all task*/
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  z-index: 9999;
+  animation: fadeOut 2s ease-in-out;
+}
+
+/*to add animation to popup */
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
