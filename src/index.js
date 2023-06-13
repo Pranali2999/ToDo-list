@@ -1,4 +1,4 @@
-import "./styles.css";
+//import "./styles.css";
 // Get required elements
 const todoInput = document.getElementById("todo-input");
 const addBtn = document.getElementById("add-btn");
